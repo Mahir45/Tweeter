@@ -22,7 +22,7 @@ body {
   display: flex;
  flex-direction: column;
 background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
-background-color: rgb(146, 241, 237);
+background-color: rgba(179, 117, 81, 0.815);
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
@@ -32,9 +32,14 @@ main {
   background-color: inherit;
   margin-right: auto;
   margin-left: auto;
-  background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+  /* background-image: url("https://www.transparenttextures.com/patterns/cartographer.png"); */
   
 }
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ @media (min-wdith: 1024px) {
+   
+   
+ }

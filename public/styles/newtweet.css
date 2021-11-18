@@ -108,7 +108,7 @@ hr{
   #errormessage{
     margin: 0.7em;
     border:2px solid rgb(255, 0, 0);
-    background-color: rgba(80, 1, 1, 0.26);
+    /* background-color: rgba(80, 1, 1, 0.26); */
     color: white;
   }
 
