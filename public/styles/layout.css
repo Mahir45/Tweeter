@@ -15,11 +15,26 @@ html {
  */
 
 body {
-  color: #545149;
-  background-color: #f4f1ec;
+  
+
   font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+ flex-direction: column;
+background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+background-color: rgb(146, 241, 237);
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
+main {
+  width: 90%;
+  align-self: center;
+  background-color: inherit;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+  
+}
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */

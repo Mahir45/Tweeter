@@ -1,0 +1,23 @@
+nav{
+display:flex;
+background-color:#4056A1;
+padding: 1.5em;
+box-sizing: border-box;
+height: 120px;
+color: white;
+justify-content: space-between;
+position: sticky;
+top:0;
+
+}
+
+
+#newTweet{
+display:flex;
+align-items:center;
+flex-direction:column;
+
+}
+div > i{
+  color: red;
+}
