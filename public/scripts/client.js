@@ -60,7 +60,7 @@ $(document).ready(function () {
     const characterCount = $("#tweet-text").val().trim().length;
     if (characterCount === 0) {
       $("#errormessage").text(
-        "🛑Cannot tweet nothing, don't be those other guys won't hurt you🛑"
+        "🛑Cannot tweet nothing, don't be those other guys, we won't tweet you🛑"
       );
       $("#errormessage").slideDown("slow");
       $("#errormessage").delay(4000).slideUp("slow");

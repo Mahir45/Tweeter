@@ -1,12 +1,11 @@
-#header{
-  display:flex;
+#header {
+  display: flex;
   align-items: center;
   flex-direction: column;
   /* background-color: rgb(218, 156, 102); */
   height: 400px;
 }
 #imagecontainer {
-
   align-items: center;
   flex-direction: column;
 }
