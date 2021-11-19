@@ -1,119 +1,105 @@
-.new-tweet-footer{
-   display: flex;
-   justify-content: space-between;
-   margin-top: 15px;
-   font-family: "bungee";
-   
-  }
+.new-tweet-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-family: "bungee";
+}
 
-button{
-  
-  font-family: 'Bungee', cursive;
-  background-color: #4056A1;
+button {
+  font-family: "Bungee", cursive;
+  background-color: #4056a1;
   color: white;
 }
-#tweet-text{
-  border:none;
+#tweet-text {
+  border: none;
   border-bottom: 5px solid black;
-
 }
-form{
+form {
   display: flex;
-  flex-direction: column ;
+  flex-direction: column;
 }
 
-.newclass{
-color:purple
+.newclass {
+  color: purple;
 }
 
-.tweetbox{
-  border:4px solid black;
-  padding:0.7em;
+.tweetbox {
+  border: 4px solid black;
+  padding: 0.7em;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.tweetbox:hover{
+.tweetbox:hover {
   box-shadow: 10px 10px rgb(56, 44, 44);
 }
 
-.newheader{
-  display:flex;
+.newheader {
+  display: flex;
   justify-content: space-between;
 }
 
-.divved{
+.divved {
   display: flex;
-
 }
 
-.div2{
-  display:flex;
-  justify-content:space-between;
+.div2 {
+  display: flex;
+  justify-content: space-between;
 }
- 
-.div3{
-  display:flex;
- 
+
+.div3 {
+  display: flex;
 }
-hr{
+hr {
   width: 100%;
   background-color: blueviolet;
 }
 
-#main2{
-  margin:2em;
-
+#main2 {
+  margin: 2em;
 }
-#retweet{
+#retweet {
   margin: 0.5em;
 }
 
-#flag{
+#flag {
   margin: 0.5em;
 }
 
-#heart{
+#heart {
   margin: 0.5em;
 }
 
-#retweet:hover{
-  
-    transform: scale(1.04, 1);
-    color: rgb(17, 196, 1);
-    
-  }
+#retweet:hover {
+  transform: scale(1.04, 1);
+  color: rgb(17, 196, 1);
+}
 
-  #flag:hover{
-  
-    transform: scale(1.04, 1);
-    color: rgb(236, 133, 35);
-    
-  }
- #heart:hover{
+#flag:hover {
+  transform: scale(1.04, 1);
+  color: rgb(236, 133, 35);
+}
+#heart:hover {
   transform: scale(1.04, 1);
   color: rgb(255, 9, 9);
- }
-  
+}
 
-  #img{
-    height: inherit;
-    width: inherit;
-  }
+#img {
+  height: inherit;
+  width: inherit;
+}
 
-  #baby{
-    margin-right: 0.5em;
-    color:mediumvioletred;
-  }
+#baby {
+  margin-right: 0.5em;
+  color: mediumvioletred;
+}
 
-  #errormessage{
-    margin: 0.7em;
-    border:2px solid rgb(255, 0, 0);
-    /* background-color: rgba(80, 1, 1, 0.26); */
-    color: white;
-  }
+#errormessage {
+  margin: 0.7em;
+  border: 2px solid rgb(255, 0, 0);
+  color: white;
+}
 
-  #wolf{
-    padding-right: 10px;
-
-  }
- 
+#wolf {
+  padding-right: 10px;
+}
