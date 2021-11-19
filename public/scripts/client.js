@@ -1,27 +1,26 @@
 /*
-* Client-side JS logic goes here
-* jQuery is already loaded
-* Reminder: Use (and do all your DOM work in) jQuery's document ready function
-*/
+ * Client-side JS logic goes here
+ * jQuery is already loaded
+ * Reminder: Use (and do all your DOM work in) jQuery's document ready function
+ */
 $(document).ready(function () {
- const loadTweets = function () {
-   $.ajax("/tweets") 
-  .then(function(res){
-   renderTweets(res)
-  }); 
- }
-  loadTweets(); 
+  const loadTweets = function () {
+    $.ajax("/tweets").then(function (res) {
+      renderTweets(res);
+      $(".counter").text(140);
+    });
+  };
+  loadTweets();
   $("#errormessage").hide();
-  
-  const renderTweets = (tweets) =>  {
+
+  const renderTweets = (tweets) => {
     $("#tweets-container").empty();
     for (let key of tweets) {
       $tweet = createTweetElement(key);
-      $('#tweets-container').prepend($tweet);
+      $("#tweets-container").prepend($tweet);
     }
-   
-  }
-  function createTweetElement (tweetData) {
+  };
+  function createTweetElement(tweetData) {
     const escape = function (str) {
       let div = document.createElement("div");
       div.appendChild(document.createTextNode(str));
@@ -52,36 +51,33 @@ $(document).ready(function () {
         </div>
       </footer>
     </article>
-  </section>`
-  return $newTweet
-}
+  </section>`;
+    return $newTweet;
+  }
 
   $("#form").on("submit", function (event) {
     event.preventDefault();
     const characterCount = $("#tweet-text").val().trim().length;
     if (characterCount === 0) {
-      $("#errormessage").text("🛑Cannot tweet nothing, don't be those other guys won't hurt you🛑")
+      $("#errormessage").text(
+        "🛑Cannot tweet nothing, don't be those other guys won't hurt you🛑"
+      );
       $("#errormessage").slideDown("slow");
-      $("#errormessage").delay(4000).slideUp("slow")
-      return 
+      $("#errormessage").delay(4000).slideUp("slow");
+      return;
     }
     if (characterCount > 140) {
-      $("#errormessage").text("🔺Tweet is way toooo long, the tweet can only be 140 characters🔻")
+      $("#errormessage").text(
+        "🔺Tweet is way toooo long, the tweet can only be 140 characters🔻"
+      );
       $("#errormessage").slideDown("slow");
-      $("#errormessage").delay(4000).slideUp("slow")
-      return
+      $("#errormessage").delay(4000).slideUp("slow");
+      return;
     }
     const formData = $(this).serialize();
-    $.ajax("/tweets", { method: "POST", data: formData })
-    .then(()=> {
-      loadTweets()
+    $.ajax("/tweets", { method: "POST", data: formData }).then(() => {
+      loadTweets();
       $("#tweet-text").val("");
-    })
-
-    
+    });
   });
 });
-
-
-
-
